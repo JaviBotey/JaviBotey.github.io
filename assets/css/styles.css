@@ -1,43 +1,53 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
 }
 
 header {
     background: #007acc; /* Header background color */
     color: white; /* Header text color */
-    padding: 20px;
-    text-align: center;
+    padding: 20px 0; /* Add vertical padding */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 h1 {
-    margin: 0;
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Increase font size */
 }
 
 main {
     padding: 20px;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align the main content */
 }
 
 section {
     background: white; /* Section background color */
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Add vertical margin */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+p {
+    margin: 10px 0; /* Add margin to paragraphs */
 }
 
 a {
     color: #007acc; /* Link color */
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links for emphasis */
 }
 
 a:hover {
     text-decoration: underline; /* Underline on hover */
+    color: #005b99; /* Darker blue on hover */
 }
 
 footer {
@@ -48,4 +58,16 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px; /* Add margin above footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Decrease font size for small screens */
+    }
+
+    section {
+        padding: 15px; /* Less padding on smaller screens */
+    }
 }
